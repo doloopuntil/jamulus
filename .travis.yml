@@ -13,6 +13,7 @@ deploy:
   api_key:
     secure: QLDjqbZ0u7PtCT42375g3to8mTgJzfT/zo2h2lxBjgdIE3BGDmeAz/t32N/9Qp6cJurBf3wq98UhItIubuLD5OAWR0hmKyUE5kSrz46ZEDQRYcma85gl986ZsZIyC8wz/nYwbZcRO8TKCT0RzFOxvfProhM6gAUWdMvYc/2MsaA5di+Yy4F71Cwdjz+Hw54OmrIGxQeDjK+ipg130mrangbUMS5i+c1dtmJ6SD0qle6aofPWx+pbIy08GK+OA6djh7Gxiu4w4rXnz7wZa3qsgOVI53pudLguy4ZQIsy80ojLFjvdTCG4DfKrNolMKrA/dKILOYoqwZhVbMbYmflrC0YE8RST6SQtnTJVqxw+u+M2pS62TX3Ace8Ewp8SnPTcWlKs+WCfaF+KbK5jieW0n/FZkuNjXkuHidE8/uDVZf6oYKDQZ97e9l0QDClponJoeJwkRxUcdgJ+hn8ZNtEHG51JooeZEn87eGEN2TuRoItGw7DWrqJnWZUrMCyvJmN8XC5gWQvNPjfhXJvwf1AIGULmxoBALTeUVStbwgBlHAQz1vdw9aBvH253NRUyVOzqrtdzoPLwHUsi7zPzaJUcxxRKQxV/sNhbs6IpXSrblSOHKzXdK8ZGlxN1HlUg06n43h+WFYAtLtboqzXjh1ya2aFIZooZj4HM5ASlkYkBIR0=
   file: deploy/Jamulus-installer-3.5.2git-mac.dmg
+  skip_cleanup: true
   on:
     repo: doloopuntil/jamulus
     branch: improve_ci
