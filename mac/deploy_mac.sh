@@ -9,12 +9,13 @@ MAC_PATH="${ROOT_PATH}/mac"
 RES_PATH="${ROOT_PATH}/src/res"
 BUILD_PATH="${ROOT_PATH}/build"
 DEPLOY_PATH="${ROOT_PATH}/deploy"
+BUILD_CONFIG="release"
 JOB_COUNT=$(sysctl -n hw.ncpu)
 
 function build_app {
     # Build Jamulus
     qmake "${ROOT_PATH}/${APP_NAME}.pro" -o "${BUILD_PATH}/Makefile" \
-        "CONFIG+=release" "TARGET=$1" "QMAKE_APPLICATION_BUNDLE_NAME=$1" ${@:2}
+        "CONFIG+=${BUILD_CONFIG}" "TARGET=$1" "QMAKE_APPLICATION_BUNDLE_NAME=$1" ${@:2}
 
     make -f "${BUILD_PATH}/Makefile" -C "${BUILD_PATH}" -j${JOB_COUNT}
 
